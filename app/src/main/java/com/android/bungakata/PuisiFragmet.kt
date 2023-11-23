@@ -119,6 +119,7 @@ class PuisiFragmet : Fragment() {
                 intent.putExtra("CONTENT", content)
                 startActivity(intent)
             },{selectedPuisi ->
+                    updateId = selectedPuisi.id
                     delete(selectedPuisi)
                 }
             )
